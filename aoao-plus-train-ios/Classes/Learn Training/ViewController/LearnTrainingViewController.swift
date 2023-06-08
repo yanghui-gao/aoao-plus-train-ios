@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import DZNEmptyDataSet
 import aoao_plus_common_ios
 
 enum LearnTrainingType: Int {
@@ -44,6 +45,12 @@ class LearnTrainingViewController: AAViewController {
 		self.view.backgroundColor = UIColor.init(named: "bgcolor_F5F5F5_000000", in: AATrainModule.share.bundle, compatibleWith: nil)
 		
 		self.customTableView.layer.cornerRadius = 4
+		
+		self.customTableView.emptyDataSetSource = self
+		
+		self.customTableView.emptyDataSetDelegate = self
+		
+		self.customTableView.tableFooterView = UIView()
 	}
 	func bindViewModel() {
 		let orderInput = LearnTrainingViewModel.Input.init(getLearnTrainingListObservable: self.getListObservable)
@@ -117,5 +124,21 @@ extension LearnTrainingViewController: UITableViewDelegate, UITableViewDataSourc
 			self.view.aoaoMakeToast("未知状态, 点击无效")
 			return
 		}
+	}
+}
+extension LearnTrainingViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
+	public func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+		return UIImage(named: "none-data", in: AATrainModule.share.bundle, compatibleWith: nil)
+	}
+	public func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+		let attributes = [
+			NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16.0),
+			NSAttributedString.Key.foregroundColor: UIColor(named: "boss_000000-40_FFFFFF-40", in: AATrainModule.share.bundle, compatibleWith: nil) ?? .darkGray
+		]
+		return NSAttributedString(string: "暂无数据", attributes: attributes)
+	}
+
+	public func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
+		return true
 	}
 }
