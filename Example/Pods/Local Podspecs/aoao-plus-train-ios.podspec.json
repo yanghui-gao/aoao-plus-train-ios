@@ -1,0 +1,22 @@
+{
+  "name": "aoao-plus-train-ios",
+  "version": "0.1.0",
+  "summary": "A short description of aoao-plus-train-ios.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/高炀辉/aoao-plus-train-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "高炀辉": "insistgyh@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/高炀辉/aoao-plus-train-ios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "aoao-plus-train-ios/Classes/**/*"
+}

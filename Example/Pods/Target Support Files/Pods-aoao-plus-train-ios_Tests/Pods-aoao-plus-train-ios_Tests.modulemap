@@ -1,0 +1,6 @@
+framework module Pods_aoao_plus_train_ios_Tests {
+  umbrella header "Pods-aoao-plus-train-ios_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

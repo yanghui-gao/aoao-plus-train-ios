@@ -1,0 +1,16 @@
+PODS:
+  - aoao-plus-train-ios (0.1.0)
+
+DEPENDENCIES:
+  - aoao-plus-train-ios (from `../`)
+
+EXTERNAL SOURCES:
+  aoao-plus-train-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  aoao-plus-train-ios: 8cfe7b052fbca72275c2e623ab0e7a1db1ee4c2b
+
+PODFILE CHECKSUM: df00211be57b8074c826d03c0aa4da513db044c1
+
+COCOAPODS: 1.11.3

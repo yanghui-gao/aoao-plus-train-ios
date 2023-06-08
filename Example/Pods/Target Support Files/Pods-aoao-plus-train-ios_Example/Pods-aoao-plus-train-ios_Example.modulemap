@@ -1,0 +1,6 @@
+framework module Pods_aoao_plus_train_ios_Example {
+  umbrella header "Pods-aoao-plus-train-ios_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
