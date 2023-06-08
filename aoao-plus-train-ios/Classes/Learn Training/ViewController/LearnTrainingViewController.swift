@@ -7,14 +7,13 @@
 
 import UIKit
 import aoao_plus_common_ios
-import XLPagerTabStrip
 
 enum LearnTrainingType {
 	case learning	// 学习
 	case training	// 培训(在线考试)
 }
 
-class LearnTrainingViewController: AAViewController, IndicatorInfoProvider {
+class LearnTrainingViewController: AAViewController {
 	
 	@IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
 	
@@ -23,8 +22,6 @@ class LearnTrainingViewController: AAViewController, IndicatorInfoProvider {
 	var learnTrainingType:LearnTrainingType = .learning
 	
 	var dateSource:[[String: String]] = []
-	
-	public var itemInfo: IndicatorInfo = "学习"
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +46,6 @@ class LearnTrainingViewController: AAViewController, IndicatorInfoProvider {
 		
 		self.customTableView.layer.cornerRadius = 4
 	}
-	func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-		return self.itemInfo
-	}
-
 }
 extension LearnTrainingViewController: UITableViewDelegate, UITableViewDataSource {
 	
