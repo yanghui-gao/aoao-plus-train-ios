@@ -7,7 +7,7 @@
 
 import UIKit
 
-let modulerName = "aoao-train-ios"
+let modulerName = "aoao-plus-train-ios"
 
 public class AATrainModule {
 	public static let share = AATrainModule()
