@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,20 +13,18 @@
         <!--Learn Training View Controller-->
         <scene sceneID="EMQ-3k-bjl">
             <objects>
-                <viewController storyboardIdentifier="LearnTrainingViewController" id="Drw-Q2-Yle" customClass="LearnTrainingViewController" customModule="aoao_train_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LearnTrainingViewController" id="Drw-Q2-Yle" customClass="LearnTrainingViewController" customModule="aoao_plus_train_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bnd-Xo-afR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ES5-yf-C3E">
-                                <rect key="frame" x="10" y="54" width="355" height="420"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="420" id="Xce-cD-WGT"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="57" width="355" height="721"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <color key="tintColor" red="0.14117647059999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="84" id="Nqt-QD-lxE" customClass="LearnTrainingTableViewCell" customModule="aoao_train_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="355" height="84"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="84" id="Nqt-QD-lxE" customClass="LearnTrainingTableViewCell" customModule="aoao_plus_train_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="355" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nqt-QD-lxE" id="VbX-Eb-0yX">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="84"/>
@@ -112,13 +110,13 @@
                         <color key="backgroundColor" name="bgcolor_F5F5F5_000000"/>
                         <constraints>
                             <constraint firstItem="ES5-yf-C3E" firstAttribute="top" secondItem="N1R-Lm-6tl" secondAttribute="top" constant="10" id="037-fy-G4c"/>
+                            <constraint firstItem="N1R-Lm-6tl" firstAttribute="bottom" secondItem="ES5-yf-C3E" secondAttribute="bottom" id="CVh-mD-a76"/>
                             <constraint firstItem="N1R-Lm-6tl" firstAttribute="trailing" secondItem="ES5-yf-C3E" secondAttribute="trailing" constant="10" id="nuM-Kk-cFR"/>
                             <constraint firstItem="ES5-yf-C3E" firstAttribute="leading" secondItem="N1R-Lm-6tl" secondAttribute="leading" constant="10" id="tf9-h2-THM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="customTableView" destination="ES5-yf-C3E" id="i6T-k6-6jx"/>
-                        <outlet property="tableViewHeightConstraint" destination="Xce-cD-WGT" id="dZa-1g-wdb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAp-sC-rbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,31 +126,31 @@
         <!--Training View Controller-->
         <scene sceneID="WWC-GY-iqm">
             <objects>
-                <viewController storyboardIdentifier="TrainingViewController" id="PMr-J6-WCh" customClass="TrainingViewController" customModule="aoao_train_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainingViewController" id="PMr-J6-WCh" customClass="TrainingViewController" customModule="aoao_plus_train_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gC-N8-7PI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年度训练试题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-w3-USB">
-                                <rect key="frame" x="138.66666666666666" y="142" width="98" height="19.666666666666657"/>
+                                <rect key="frame" x="138.66666666666666" y="145" width="98" height="19.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MDS外送员专用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-eB-imH">
-                                <rect key="frame" x="136" y="165.66666666666666" width="103" height="17"/>
+                                <rect key="frame" x="136" y="168.66666666666666" width="103" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" name="boss_000000-60_FFFFFF-60"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为提升 MDS 骑士的专业技能，提高骑士的工作效率，从而更好地确保 MDS 的顾客满意及骑士的保留，特制定该考试内容，请您提前学习相关培训资料；点击下方按钮开始考试。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPS-nh-ELW">
-                                <rect key="frame" x="30" y="215.66666666666666" width="315" height="39.666666666666657"/>
+                                <rect key="frame" x="30" y="218.66666666666666" width="315" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" name="boss_000000-60_FFFFFF-60"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2E-DN-C9d">
-                                <rect key="frame" x="87.666666666666686" y="319.33333333333331" width="200" height="70"/>
+                                <rect key="frame" x="87.666666666666686" y="322.33333333333331" width="200" height="70"/>
                                 <state key="normal" title="开始考试" backgroundImage="begin examination  Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -204,6 +202,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

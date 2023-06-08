@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class LearnTrainingTableViewCell: UITableViewCell {
 
@@ -24,7 +25,16 @@ class LearnTrainingTableViewCell: UITableViewCell {
 	/// 指示图
 	@IBOutlet weak var rightIcon: UIImageView!
 	
-	
+	var model: LearnTrainingModel? {
+		didSet {
+			guard let model = self.model else { return }
+			subtitleLabel.text = model.summary
+			titleLabel.text = model.title
+			if let urlstr = model.iconUrl, let url = URL(string: urlstr)  {
+				self.headerImageView.kf.setImage(with: url)
+			}
+		}
+	}
 	
 	override func awakeFromNib() {
         super.awakeFromNib()

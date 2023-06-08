@@ -9,6 +9,8 @@ import UIKit
 import aoao_plus_common_ios
 
 class TrainingViewController: AAViewController {
+	
+	var url: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +19,10 @@ class TrainingViewController: AAViewController {
     }
 
 	@IBAction func open(_ sender: UIButton) {
-		"https://ks.wjx.top/vm/ODYSIYD.aspx?title=骑士月度训练考试".openURL()
+		guard let url = self.url else {
+			self.view.aoaoMakeToast("获取URL失败, 请重试")
+			return
+		}
+		url.openURL()
 	}
 }

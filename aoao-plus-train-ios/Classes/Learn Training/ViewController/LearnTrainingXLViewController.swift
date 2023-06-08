@@ -45,10 +45,10 @@ class LearnTrainingXLViewController: TabmanViewController {
 		let stroyboard = AATrainModule.share.mineStoryboard
 		let vc_1 = stroyboard.instantiateViewController(withIdentifier: "LearnTrainingViewController") as! LearnTrainingViewController
 		vc_1.learnTrainingType = .learning
-		vc_1.itemInfo.title = "学习"
+		vc_1.title = "学习"
 		let vc_2 = stroyboard.instantiateViewController(withIdentifier: "LearnTrainingViewController") as! LearnTrainingViewController
 		vc_2.learnTrainingType = .training
-		vc_2.itemInfo.title = "在线考试"
+		vc_2.title = "在线考试"
 		
 		viewControllers = [vc_1, vc_2]
 		tmBarItemables = [TMBarItem(title: "学习"), TMBarItem(title: "在线考试")]
