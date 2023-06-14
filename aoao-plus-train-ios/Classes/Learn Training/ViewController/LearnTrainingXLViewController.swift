@@ -68,6 +68,7 @@ class LearnTrainingXLViewController: TabmanViewController {
 		}
 		// 过渡动画配置
 		bar.layout.transitionStyle = .snap // Customize
+		bar.backgroundView.style = .flat(color: UIColor.white)
 		// 添加至指定view
 		addBar(bar, dataSource: self, at: .top)
 		
