@@ -173,6 +173,10 @@
                             <constraint firstItem="XGK-eB-imH" firstAttribute="centerX" secondItem="Uu9-w3-USB" secondAttribute="centerX" id="lPl-W9-dis"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="explainLabel" destination="XGK-eB-imH" id="Uu3-di-wdT"/>
+                        <outlet property="titleLabel" destination="Uu9-w3-USB" id="ecA-qt-Rzn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1t-wR-5a1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

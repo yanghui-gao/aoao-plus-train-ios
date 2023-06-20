@@ -119,7 +119,7 @@ extension LearnTrainingViewController: UITableViewDelegate, UITableViewDataSourc
 		case .learning:
 			link.openURL()
 		case .training:
-			"training".openURL(para: ["url": link])
+			"training".openURL(para: ["model": model, "url":link])
 		default:
 			self.view.aoaoMakeToast("未知状态, 点击无效")
 			return

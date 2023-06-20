@@ -20,6 +20,15 @@ public struct LearnRouter {
 		/// 在线考试
 		navigator.register("training".routerUrl) { url, values, context in
 			let vc = AATrainModule.share.mineStoryboard.instantiateViewController(withIdentifier: "TrainingViewController") as! TrainingViewController
+			guard let para = context as? [String: Any?] else {
+				return vc
+			}
+			if let model = para["model"] as? LearnTrainingModel {
+				vc.model = model
+			}
+			if let url = para["url"] as? String {
+				vc.url = url
+			}
 			return vc
 		}
 		

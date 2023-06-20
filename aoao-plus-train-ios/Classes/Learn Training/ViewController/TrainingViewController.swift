@@ -10,11 +10,20 @@ import aoao_plus_common_ios
 
 class TrainingViewController: AAViewController {
 	
-	var url: String?
+	
 
-    override func viewDidLoad() {
+	@IBOutlet weak var titleLabel: UILabel!
+	
+	@IBOutlet weak var explainLabel: UILabel!
+	
+	var url: String?
+	
+	var model:LearnTrainingModel?
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-		self.title = "年度训练试题"
+		self.title = model?.title
+		self.explainLabel.text = model?.summary
 		self.view.backgroundColor = UIColor(named: "bgcolor_F5F5F5_000000", in: AATrainModule.share.bundle, compatibleWith: nil)
     }
 
