@@ -23,6 +23,7 @@ class TrainingViewController: AAViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		self.title = model?.title
+		self.titleLabel.text = model?.title
 		self.explainLabel.text = model?.summary
 		self.view.backgroundColor = UIColor(named: "bgcolor_F5F5F5_000000", in: AATrainModule.share.bundle, compatibleWith: nil)
     }

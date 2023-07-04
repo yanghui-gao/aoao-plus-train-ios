@@ -143,7 +143,7 @@
                                 <color key="textColor" name="boss_000000-60_FFFFFF-60"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为提升 MDS 骑士的专业技能，提高骑士的工作效率，从而更好地确保 MDS 的顾客满意及骑士的保留，特制定该考试内容，请您提前学习相关培训资料；点击下方按钮开始考试。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPS-nh-ELW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为提升骑手的专业技能，提高骑手的工作效率，从而更好地确保顾客满意及骑手的保留，特制定该考试内容，请您提前学习相关培训资料；点击下方按钮开始考试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPS-nh-ELW">
                                 <rect key="frame" x="30" y="218.66666666666666" width="315" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" name="boss_000000-60_FFFFFF-60"/>
